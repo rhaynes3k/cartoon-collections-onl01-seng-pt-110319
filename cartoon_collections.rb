@@ -12,10 +12,5 @@ end
 
 def find_the_cheese(arr)
 cheeses = ["cheddar", "gouda", "camembert"]
- x = 0
- while x < cheeses.length do
-   arr.find{|c|c == cheeses[x]}
-   x += 1
-  end
-
+arr.find{|c|cheeses.include?(c)}
 end
